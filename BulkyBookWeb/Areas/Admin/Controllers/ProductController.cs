@@ -215,8 +215,7 @@ namespace BulkyBookWeb.Areas.Admin.Controllers
 
 
         //POST
-        [HttpDelete]
-        [ValidateAntiForgeryToken]//prevent cros req forgery
+        [HttpDelete]//prevent cros req forgery
         public IActionResult Delete(int? id)
         {
             var obj = _iunitOfWork.Product.GetFirstOrDefault(u => u.Id == id);//find through pk

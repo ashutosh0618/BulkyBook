@@ -31,13 +31,14 @@ internal class Program
 
 
         builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
-
+        
+        //builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
         //builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
         //builder.Services.AddHttpClient();
-       // builder.Services.AddHttpContextAccessor();
+        // builder.Services.AddHttpContextAccessor();
 
         //builder.Services.AddScoped<IUnitOfWork<Lead>, LeadManager>();
-        
+
         builder.Services.AddControllers();
 
 
@@ -47,7 +48,7 @@ internal class Program
 
 
 
-        //builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+     
 
         /*
          builder.Services.AddContext<ApplicationContext>(option => options.UseSqlServer(
@@ -81,6 +82,7 @@ internal class Program
         app.UseAuthentication(); 
 
         app.UseAuthorization();
+
         app.MapRazorPages();//identity
 
         app.MapControllerRoute(

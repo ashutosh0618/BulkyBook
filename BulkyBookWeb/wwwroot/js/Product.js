@@ -21,7 +21,7 @@ function loadDataTable() {
                     return `
                     <div class="btn-group" role="group">
                         <a href="/Admin/Product/Upsert?id=${data}" class="btn btn-primary" ><i class="bi bi-patch-check"></i> Edit</a>
-                         <a  class="btn btn-danger" onClick=Delete('/Admin/Product/Delete${data}')><i class="bi bi-patch-check"></i> Remove</a>
+                         <a  class="btn btn-danger" onClick=Delete('/Admin/Product/Delete/${data}')><i class="bi bi-patch-check"></i> Remove</a>
 
                     </div>
                     `
