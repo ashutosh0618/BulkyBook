@@ -9,7 +9,7 @@ using System.Text.Encodings.Web;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
-//using Microsoft.AspNetCore.Identity.UI.Services;
+using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.WebUtilities;
@@ -19,12 +19,13 @@ namespace BulkyBokkWeb.Areas.Identity.Pages.Account
     public class ForgotPasswordModel : PageModel
     {
         private readonly UserManager<IdentityUser> _userManager;
-       // private readonly IEmailSender _emailSender;
+        private readonly IEmailSender _emailSender;
 
-        public ForgotPasswordModel(UserManager<IdentityUser> userManager)/*, IEmailSender emailSender*/
+        public ForgotPasswordModel(UserManager<IdentityUser> userManager, IEmailSender emailSender)/*, IEmailSender emailSender*/
         {
             _userManager = userManager;
-            //_emailSender = emailSender;
+            _emailSender = emailSender;
+            _emailSender = emailSender;
         }
 
         /// <summary>

@@ -9,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using BulkyBook.DataAccess;
 using Microsoft.AspNetCore.Identity;
+using BulkyBook.Model;
 //using Microsoft.EntityFrameworkCore;
 
 
@@ -25,14 +26,22 @@ internal class Program
             builder.Configuration.GetConnectionString("DefalutConnection")
             ));
 
-        builder.Services.AddDefaultIdentity<IdentityUser>()
-    .AddEntityFrameworkStores<ApplicationDbContext>();
+        // builder.Services.AddDefaultIdentity<ApplicationUser>();
+      
+
+        builder.Services.AddIdentity<IdentityUser,IdentityRole> ()
+    .AddEntityFrameworkStores<ApplicationDbContext>()
+    .AddDefaultUI()
+    .AddDefaultTokenProviders(); 
 
 
 
         builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
         
-        //builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
+
+
+        builder.Services.AddRazorPages();
+
         //builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
         //builder.Services.AddHttpClient();
         // builder.Services.AddHttpContextAccessor();
@@ -40,6 +49,9 @@ internal class Program
         //builder.Services.AddScoped<IUnitOfWork<Lead>, LeadManager>();
 
         builder.Services.AddControllers();
+        builder.Services.AddAuthentication();
+        builder.Services.AddAuthorization();
+        //builder.Services.ConfigureIdentity();
 
 
 
@@ -48,7 +60,7 @@ internal class Program
 
 
 
-     
+
 
         /*
          builder.Services.AddContext<ApplicationContext>(option => options.UseSqlServer(
@@ -82,7 +94,7 @@ internal class Program
         app.UseAuthentication(); 
 
         app.UseAuthorization();
-
+       
         app.MapRazorPages();//identity
 
         app.MapControllerRoute(
