@@ -119,8 +119,8 @@ namespace BulkyBokkWeb.Areas.Identity.Pages.Account
             public string? State { get; set; }
             public string? PostalCode { get; set; }
             public string? PhoneNumber { get; set; }
-            public string? Role { get; set; }
-            public int? CompanyId { get; set; }
+            public string Role { get; set; }
+            public int CompanyId { get; set; }
 
             [ValidateNever]
             public IEnumerable<SelectListItem> RoleList { get; set; }//roles
@@ -184,6 +184,14 @@ namespace BulkyBokkWeb.Areas.Identity.Pages.Account
                 user.Name=Input.Name;
                 user.PhoneNumber=Input.PhoneNumber;
 
+                //Asign company
+                if (Input.Role == SD.Role_User_Comp)
+                {
+                    user.CompanyId = Input.CompanyId;
+
+                }
+
+                //check email
                 var emailAlreadyUsed = _userManager.Users.Any(x => x.Email == user.Email);
                 if (emailAlreadyUsed)
                 {

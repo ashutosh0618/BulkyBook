@@ -15,15 +15,15 @@ namespace BulkyBook.Model
         [Key]
         public int Id { get; set; }
         [Required]
-        public string Title { get; set; }
+        public string? Title { get; set; }
 
-        public string Description { get; set; }
-
-        [Required]
-        public string ISBN { get; set; }
+        public string? Description { get; set; }
 
         [Required]
-        public string Author { get; set; }
+        public string? ISBN { get; set; }
+
+        [Required]
+        public string? Author { get; set; }
         
         [Required]
         [Range(1,10000)]
@@ -42,7 +42,7 @@ namespace BulkyBook.Model
         public double Price100 { get; set; }
 
         [ValidateNever]
-        public string Image { get; set;}
+        public string? Image { get; set;}
 
         [Required]
         [DisplayName("Category")]
