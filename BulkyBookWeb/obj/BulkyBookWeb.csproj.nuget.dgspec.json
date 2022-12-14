@@ -4,12 +4,12 @@
     "E:\\asp c#\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj": {}
   },
   "projects": {
-    "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook,Utility.csproj": {
+    "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook.Utility.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook,Utility.csproj",
-        "projectName": "BulkyBook,Utility",
-        "projectPath": "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook,Utility.csproj",
+        "projectUniqueName": "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook.Utility.csproj",
+        "projectName": "BulkyBook.Utility",
+        "projectPath": "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook.Utility.csproj",
         "packagesPath": "C:\\Users\\sai\\.nuget\\packages\\",
         "outputPath": "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\obj\\",
         "projectStyle": "PackageReference",
@@ -249,8 +249,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook,Utility.csproj": {
-                "projectPath": "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook,Utility.csproj"
+              "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook.Utility.csproj": {
+                "projectPath": "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook.Utility.csproj"
               },
               "E:\\asp c#\\BulkyBook\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj": {
                 "projectPath": "E:\\asp c#\\BulkyBook\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj"

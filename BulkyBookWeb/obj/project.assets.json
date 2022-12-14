@@ -4406,19 +4406,6 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
-      "BulkyBook,Utility/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.11"
-        },
-        "compile": {
-          "bin/placeholder/BulkyBook,Utility.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/BulkyBook,Utility.dll": {}
-        }
-      },
       "BulkyBook.DataAccess/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -4451,6 +4438,19 @@
         },
         "runtime": {
           "bin/placeholder/BulkyBook.Model.dll": {}
+        }
+      },
+      "BulkyBook.Utility/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.11"
+        },
+        "compile": {
+          "bin/placeholder/BulkyBook.Utility.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/BulkyBook.Utility.dll": {}
         }
       }
     }
@@ -12002,11 +12002,6 @@
         "system.xml.xdocument.nuspec"
       ]
     },
-    "BulkyBook,Utility/1.0.0": {
-      "type": "project",
-      "path": "../BulkyBook,Utility/BulkyBook,Utility.csproj",
-      "msbuildProject": "../BulkyBook,Utility/BulkyBook,Utility.csproj"
-    },
     "BulkyBook.DataAccess/1.0.0": {
       "type": "project",
       "path": "../BulkyBook.DataAccess/BulkyBook.DataAccess.csproj",
@@ -12016,12 +12011,17 @@
       "type": "project",
       "path": "../BulkyBook.Model/BulkyBook.Model.csproj",
       "msbuildProject": "../BulkyBook.Model/BulkyBook.Model.csproj"
+    },
+    "BulkyBook.Utility/1.0.0": {
+      "type": "project",
+      "path": "../BulkyBook,Utility/BulkyBook.Utility.csproj",
+      "msbuildProject": "../BulkyBook,Utility/BulkyBook.Utility.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "BulkyBook,Utility >= 1.0.0",
       "BulkyBook.DataAccess >= 1.0.0",
+      "BulkyBook.Utility >= 1.0.0",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 6.0.11",
       "Microsoft.AspNetCore.Identity.UI >= 6.0.11",
       "Microsoft.EntityFrameworkCore >= 7.0.0",
@@ -12057,8 +12057,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook,Utility.csproj": {
-              "projectPath": "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook,Utility.csproj"
+            "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook.Utility.csproj": {
+              "projectPath": "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook.Utility.csproj"
             },
             "E:\\asp c#\\BulkyBook\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj": {
               "projectPath": "E:\\asp c#\\BulkyBook\\BulkyBook.DataAccess\\BulkyBook.DataAccess.csproj"

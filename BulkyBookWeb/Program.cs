@@ -51,6 +51,15 @@ internal class Program
         builder.Services.AddControllers();
         builder.Services.AddAuthentication();
         builder.Services.AddAuthorization();
+
+
+        //cookie 
+        builder.Services.ConfigureApplicationCookie(option =>
+        {
+            option.LoginPath = $"/Identity/Account/Login";
+            option.LogoutPath = $"/Identity/Account/Logout";
+            option.AccessDeniedPath = $"/Identity/Account/AccessDenied";
+        });
         //builder.Services.ConfigureIdentity();
 
 

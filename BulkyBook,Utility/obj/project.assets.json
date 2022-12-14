@@ -824,9 +824,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook,Utility.csproj",
-      "projectName": "BulkyBook,Utility",
-      "projectPath": "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook,Utility.csproj",
+      "projectUniqueName": "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook.Utility.csproj",
+      "projectName": "BulkyBook.Utility",
+      "projectPath": "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\BulkyBook.Utility.csproj",
       "packagesPath": "C:\\Users\\sai\\.nuget\\packages\\",
       "outputPath": "E:\\asp c#\\BulkyBook\\BulkyBook,Utility\\obj\\",
       "projectStyle": "PackageReference",
