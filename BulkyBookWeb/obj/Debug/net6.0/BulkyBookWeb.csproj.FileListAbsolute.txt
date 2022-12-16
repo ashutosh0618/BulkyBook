@@ -302,3 +302,4 @@ E:\asp c#\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.
 E:\asp c#\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\Microsoft.Extensions.FileProviders.Embedded.dll
 E:\asp c#\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.Utility.dll
 E:\asp c#\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\BulkyBook.Utility.pdb
+E:\asp c#\BulkyBook\BulkyBookWeb\bin\Debug\net6.0\Stripe.net.dll

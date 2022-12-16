@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3caDyUe7UWqaAvhkw3QTw5nt+rIURczy8eGCY3eHMB5mJg0SY4XM1otJohcPUZEaF1trsPJboSE9OjMD6JlIwA==",
+  "dgSpecHash": "oTN+hYG2Ptmrzl3ZOO/MHC5sFaWfNkTZQEqfFxqTu4yDOGMkWyH0Cc6OjI4syVzIVJ4a/Q0gOCkzr1i3VfBfXw==",
   "success": true,
   "projectFilePath": "E:\\asp c#\\BulkyBook\\BulkyBookWeb\\BulkyBookWeb.csproj",
   "expectedPackageFiles": [
@@ -142,6 +142,7 @@
     "C:\\Users\\sai\\.nuget\\packages\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.14.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\sai\\.nuget\\packages\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.04-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
     "C:\\Users\\sai\\.nuget\\packages\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl\\4.3.0\\runtime.ubuntu.16.10-x64.runtime.native.system.security.cryptography.openssl.4.3.0.nupkg.sha512",
+    "C:\\Users\\sai\\.nuget\\packages\\stripe.net\\41.2.0\\stripe.net.41.2.0.nupkg.sha512",
     "C:\\Users\\sai\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\sai\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\sai\\.nuget\\packages\\system.codedom\\4.4.0\\system.codedom.4.4.0.nupkg.sha512",

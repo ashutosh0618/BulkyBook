@@ -293,6 +293,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.0, )"
+            },
+            "Stripe.net": {
+              "target": "Package",
+              "version": "[41.2.0, )"
             }
           },
           "imports": [

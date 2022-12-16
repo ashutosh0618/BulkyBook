@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "bkgS36u15a3rVinTYZTf32Muey1PepB/0HZ/htap2SI=",
+  "Hash": "5X4H+AfLtUA5YfPc4+MSRspySQG0RyOv8MNaSjvSDrc=",
   "Source": "BulkyBookWeb",
   "BasePath": "_content/BulkyBookWeb",
   "Mode": "Default",
@@ -1122,6 +1122,23 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "E:\\asp c#\\BulkyBook\\BulkyBookWeb\\wwwroot\\images\\KrushiShakti.png",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\asp c#\\BulkyBook\\BulkyBookWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "images/KrushiShakti.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\KrushiShakti.png"
+    },
+    {
       "Identity": "E:\\asp c#\\BulkyBook\\BulkyBookWeb\\wwwroot\\images\\products\\18b39449-298d-41fd-8697-71432360ad25.png",
       "SourceId": "BulkyBookWeb",
       "SourceType": "Discovered",
@@ -1324,6 +1341,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\Company.js"
+    },
+    {
+      "Identity": "E:\\asp c#\\BulkyBook\\BulkyBookWeb\\wwwroot\\js\\Order.js",
+      "SourceId": "BulkyBookWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\asp c#\\BulkyBook\\BulkyBookWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyBookWeb",
+      "RelativePath": "js/Order.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\Order.js"
     },
     {
       "Identity": "E:\\asp c#\\BulkyBook\\BulkyBookWeb\\wwwroot\\js\\Product.js",

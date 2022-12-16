@@ -10,6 +10,8 @@ using Microsoft.Extensions.Hosting;
 using BulkyBook.DataAccess;
 using Microsoft.AspNetCore.Identity;
 using BulkyBook.Model;
+using BulkyBook_Utility;
+using Stripe;
 //using Microsoft.EntityFrameworkCore;
 
 
@@ -27,7 +29,7 @@ internal class Program
             ));
 
         // builder.Services.AddDefaultIdentity<ApplicationUser>();
-      
+        builder.Services.Configure<StripeSetting>(builder.Configuration.GetSection("Stripe"));//go stripe go stripe setting n bind values
 
         builder.Services.AddIdentity<IdentityUser,IdentityRole> ()
     .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -99,6 +101,8 @@ internal class Program
         app.UseStaticFiles();
 
         app.UseRouting();
+
+        StripeConfiguration.ApiKey = builder.Configuration.GetSection("Stripe:SecretKey").Get<string>();//secret key
 
         app.UseAuthentication(); 
 
