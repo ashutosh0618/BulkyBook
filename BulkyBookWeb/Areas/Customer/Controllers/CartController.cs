@@ -196,8 +196,6 @@ namespace BulkyBokkWeb.Areas.Customer.Contollers
                 //ShoppingCartVM.OrderHeader.PaymentIntentId = session.PaymentIntentId;
                 _iunitOfWork.OrderHeader.UpdateStripePaymentID(ShoppingCartVM.OrderHeader.Id, session.Id, session.PaymentIntentId);
                 _iunitOfWork.Save();
-
-
                 Response.Headers.Add("Location", session.Url);
                 return new StatusCodeResult(303);
             }
@@ -220,6 +218,7 @@ namespace BulkyBokkWeb.Areas.Customer.Contollers
 				//check the stripe status
 				if (session.PaymentStatus.ToLower() == "paid")
 				{
+					_iunitOfWork.OrderHeader.UpdateStripePaymentID(id, orderHeader.SessionId, session.PaymentIntentId);//get payment id after payment done
 					_iunitOfWork.OrderHeader.UpdateStatus(id, SD.StatusApproved, SD.PaymentStatusApproved);
                     _iunitOfWork.Save();
                 }
